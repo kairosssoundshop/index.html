@@ -1,319 +1,263 @@
-<div style="text-align:center; margin-top:40px;">
-
-<img src="51926.png"
-style="
-width:100%;
-max-width:450px;
-border-radius:25px;
-box-shadow:0 0 40px rgba(0,198,255,0.35);
-">
-
-</div>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KAIROSS | Oferta Especial</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<title>KAIROSS | Fone Premium</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <style>
+<style>
 
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:'Poppins',sans-serif;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
 
-    body{
-      background:#050505;
-      color:white;
-      overflow-x:hidden;
-    }
+html{
+scroll-behavior:smooth;
+}
 
-    .bg1{
-      position:fixed;
-      width:700px;
-      height:700px;
-      background:radial-gradient(circle, rgba(0,198,255,0.25), transparent 70%);
-      top:-200px;
-      right:-200px;
-      z-index:-1;
-    }
+body{
+background:#050505;
+color:white;
+overflow-x:hidden;
+}
 
-    .bg2{
-      position:fixed;
-      width:700px;
-      height:700px;
-      background:radial-gradient(circle, rgba(140,0,255,0.25), transparent 70%);
-      bottom:-300px;
-      left:-200px;
-      z-index:-1;
-    }
+.bg1{
+position:fixed;
+width:700px;
+height:700px;
+background:radial-gradient(circle, rgba(0,198,255,0.18), transparent 70%);
+top:-200px;
+right:-200px;
+z-index:-1;
+}
 
-    .container{
-      width:100%;
-      max-width:1200px;
-      margin:auto;
-      padding:20px;
-    }
+.bg2{
+position:fixed;
+width:700px;
+height:700px;
+background:radial-gradient(circle, rgba(140,0,255,0.18), transparent 70%);
+bottom:-300px;
+left:-200px;
+z-index:-1;
+}
 
-    header{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      padding:20px 0;
-    }
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
 
-    .logo{
-      font-size:34px;
-      font-weight:800;
-      background:linear-gradient(90deg,#8a2eff,#00c6ff);
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
-    }
+header{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:40px 0;
+}
 
-    .top-btn{
-      text-decoration:none;
-      background:linear-gradient(90deg,#8a2eff,#00c6ff);
-      color:white;
-      padding:14px 30px;
-      border-radius:50px;
-      font-weight:700;
-      transition:.3s;
-      box-shadow:0 0 30px rgba(0,198,255,0.4);
-    }
+.hero{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
 
-    .top-btn:hover{
-      transform:scale(1.05);
-    }
+.logo{
+font-size:42px;
+font-weight:800;
+margin-bottom:20px;
+background:linear-gradient(90deg,#8a2eff,#00c6ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
 
-    .hero{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:60px;
-      min-height:90vh;
-      flex-wrap:wrap;
-    }
+.tag{
+display:inline-block;
+padding:10px 20px;
+border-radius:30px;
+background:rgba(255,255,255,0.06);
+border:1px solid rgba(255,255,255,0.08);
+margin-bottom:25px;
+}
 
-    .hero-text{
-      flex:1;
-      min-width:300px;
-    }
+.hero-text h1{
+font-size:4rem;
+line-height:1.1;
+margin-bottom:25px;
+font-weight:800;
+}
 
-    .tag{
-      display:inline-block;
-      background:rgba(255,255,255,0.08);
-      border:1px solid rgba(255,255,255,0.1);
-      padding:10px 20px;
-      border-radius:30px;
-      margin-bottom:25px;
-      color:#d7d7d7;
-      font-size:14px;
-    }
+.gradient{
+background:linear-gradient(90deg,#8a2eff,#00c6ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
 
-    h1{
-      font-size:65px;
-      line-height:1.1;
-      margin-bottom:25px;
-      font-weight:800;
-    }
+.hero-text p{
+font-size:1.1rem;
+line-height:1.9;
+color:#d0d0d0;
+margin-bottom:35px;
+}
 
-    .gradient{
-      background:linear-gradient(90deg,#8a2eff,#00c6ff);
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
-    }
+.btn{
+display:inline-block;
+padding:18px 35px;
+border-radius:60px;
+background:linear-gradient(90deg,#8a2eff,#00c6ff);
+color:white;
+text-decoration:none;
+font-weight:700;
+box-shadow:0 0 35px rgba(0,198,255,0.35);
+transition:.3s;
+}
 
-    .hero-text p{
-      color:#cfcfcf;
-      line-height:1.8;
-      font-size:18px;
-      margin-bottom:35px;
-      max-width:600px;
-    }
+.btn:hover{
+transform:translateY(-4px);
+}
 
-    .main-btn{
-      display:inline-block;
-      text-decoration:none;
-      background:linear-gradient(90deg,#8a2eff,#00c6ff);
-      padding:18px 40px;
-      border-radius:60px;
-      color:white;
-      font-weight:700;
-      font-size:18px;
-      transition:.3s;
-      box-shadow:0 0 35px rgba(0,198,255,0.35);
-    }
+.hero-image img{
+width:100%;
+border-radius:35px;
+box-shadow:0 0 50px rgba(0,0,0,0.7);
+}
 
-    .main-btn:hover{
-      transform:translateY(-4px);
-    }
+section{
+padding:100px 0;
+}
 
-    .card{
-      width:420px;
-      background:linear-gradient(180deg,#111,#171717);
-      border-radius:35px;
-      padding:35px;
-      border:1px solid rgba(255,255,255,0.08);
-      box-shadow:0 0 50px rgba(0,198,255,0.15);
-      position:relative;
-      overflow:hidden;
-    }
+.section-title{
+text-align:center;
+font-size:3rem;
+margin-bottom:60px;
+font-weight:800;
+}
 
-    .card::before{
-      content:'';
-      position:absolute;
-      inset:0;
-      background:linear-gradient(135deg, rgba(140,0,255,0.15), rgba(0,198,255,0.15));
-    }
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
 
-    .card-content{
-      position:relative;
-      z-index:2;
-      text-align:center;
-    }
+.gallery img{
+width:100%;
+border-radius:30px;
+transition:.3s;
+box-shadow:0 0 35px rgba(0,0,0,0.5);
+}
 
-    .product-image img{
-      width:100%;
-      border-radius:25px;
-      margin-bottom:30px;
-      box-shadow:0 0 35px rgba(0,198,255,0.25);
-    }
+.gallery img:hover{
+transform:scale(1.03);
+}
 
-    .special{
-      font-size:50px;
-      font-weight:800;
-      margin-bottom:25px;
-    }
+.benefits{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
 
-    .old-price{
-      font-size:36px;
-      color:rgba(255,255,255,0.45);
-      text-decoration:line-through;
-      margin-bottom:15px;
-    }
+.card{
+background:#111;
+padding:35px;
+border-radius:25px;
+border:1px solid rgba(255,255,255,0.06);
+transition:.3s;
+}
 
-    .new-price{
-      font-size:90px;
-      font-weight:800;
-      margin-bottom:20px;
-    }
+.card:hover{
+transform:translateY(-8px);
+border-color:#00c6ff;
+}
 
-    .shipping{
-      font-size:20px;
-      color:#dcdcdc;
-      line-height:1.6;
-      margin-bottom:35px;
-    }
+.card h3{
+margin-bottom:15px;
+font-size:1.4rem;
+}
 
-    .buy-btn{
-      display:block;
-      text-decoration:none;
-      background:black;
-      padding:22px;
-      border-radius:60px;
-      color:white;
-      font-size:24px;
-      font-weight:800;
-      transition:.3s;
-      box-shadow:0 0 30px rgba(0,0,0,0.5);
-    }
+.card p{
+line-height:1.8;
+color:#d0d0d0;
+}
 
-    .buy-btn:hover{
-      transform:translateY(-5px);
-      background:#111;
-    }
+.offer{
+background:linear-gradient(135deg,#8a2eff,#00c6ff);
+padding:60px 40px;
+border-radius:35px;
+text-align:center;
+}
 
-    .benefits{
-      margin-top:100px;
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:25px;
-    }
+.offer h2{
+font-size:3rem;
+margin-bottom:20px;
+}
 
-    .benefit{
-      background:rgba(255,255,255,0.04);
-      border:1px solid rgba(255,255,255,0.08);
-      border-radius:25px;
-      padding:35px;
-      transition:.3s;
-      backdrop-filter:blur(10px);
-    }
+.old-price{
+font-size:2rem;
+text-decoration:line-through;
+opacity:.8;
+}
 
-    .benefit:hover{
-      transform:translateY(-8px);
-      border-color:rgba(0,198,255,0.35);
-    }
+.new-price{
+font-size:5rem;
+font-weight:800;
+margin:20px 0;
+}
 
-    .benefit h3{
-      margin-bottom:15px;
-      font-size:24px;
-    }
+.offer p{
+font-size:1.2rem;
+margin-bottom:30px;
+}
 
-    .benefit p{
-      color:#cfcfcf;
-      line-height:1.7;
-    }
+.floating-btn{
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:999;
+animation:pulse 2s infinite;
+}
 
-    footer{
-      text-align:center;
-      padding:60px 20px;
-      color:#888;
-      font-size:14px;
-    }
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.05);}
+100%{transform:scale(1);}
+}
 
-    .floating-btn{
-      position:fixed;
-      bottom:25px;
-      right:25px;
-      text-decoration:none;
-      background:linear-gradient(90deg,#8a2eff,#00c6ff);
-      color:white;
-      padding:18px 35px;
-      border-radius:60px;
-      font-weight:800;
-      font-size:18px;
-      z-index:999;
-      box-shadow:0 0 35px rgba(0,198,255,0.45);
-      animation:pulse 2s infinite;
-    }
+footer{
+text-align:center;
+padding:50px 20px;
+color:#888;
+font-size:14px;
+}
 
-    @keyframes pulse{
-      0%{transform:scale(1);}
-      50%{transform:scale(1.05);}
-      100%{transform:scale(1);}
-    }
+@media(max-width:900px){
 
-    @media(max-width:900px){
+.hero{
+grid-template-columns:1fr;
+text-align:center;
+}
 
-      h1{
-        font-size:46px;
-      }
+.hero-text h1{
+font-size:2.8rem;
+}
 
-      .hero{
-        flex-direction:column;
-        text-align:center;
-      }
+.section-title{
+font-size:2.3rem;
+}
 
-      .card{
-        width:100%;
-      }
+.new-price{
+font-size:3.5rem;
+}
 
-      .new-price{
-        font-size:75px;
-      }
+}
 
-    }
-
-  </style>
+</style>
 </head>
 
 <body>
@@ -321,56 +265,125 @@ box-shadow:0 0 40px rgba(0,198,255,0.35);
 <div class="bg1"></div>
 <div class="bg2"></div>
 
-<div class="container">
+<a class="btn floating-btn" href="https://pay.kaiross.com.br/sVVzOXcNmnyk" target="_blank">
+COMPRAR AGORA
+</a>
 
 <header>
+
+<div class="container hero">
+
+<div class="hero-text">
 
 <div class="logo">
 KAIROSS
 </div>
 
-<a href="https://pay.kaiross.com.br/sVVzOXcNmnyk" class="top-btn">
-COMPRAR
-</a>
-
-</header>
-
-<section class="hero">
-
-<div class="hero-text">
-
 <div class="tag">
-OFERTA LIMITADA 🔥
+🔥 OFERTA LIMITADA
 </div>
 
 <h1>
-O fone premium que une
-<span class="gradient">qualidade</span>
-e sofisticação.
+O Fone Premium Que Une
+<span class="gradient">Qualidade</span>
+e Sofisticação
 </h1>
 
 <p>
-Experimente áudio de alta qualidade, conforto extremo e design premium.
+Experimente áudio premium, conforto extremo e acabamento luxuoso.
 Garanta agora sua oferta especial com frete grátis para todo Brasil.
 </p>
 
-<a href="https://pay.kaiross.com.br/sVVzOXcNmnyk" class="main-btn">
-QUERO GARANTIR AGORA
+<a class="btn" href="https://pay.kaiross.com.br/sVVzOXcNmnyk" target="_blank">
+QUERO GARANTIR O MEU
 </a>
 
 </div>
 
+<div class="hero-image">
+<img src="imagem 1.png" alt="Fone Premium">
+</div>
+
+</div>
+
+</header>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+Galeria Premium
+</h2>
+
+<div class="gallery">
+
+<img src="imagem 1.png">
+<img src="imagem 2.png">
+<img src="imagem 3.png">
+<img src="imagem 4.png">
+<img src="imagem 5.png">
+<img src="imagem 6.png">
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+Por Que Esse Fone Impressiona?
+</h2>
+
+<div class="benefits">
+
 <div class="card">
-
-<div class="card-content">
-
-<div class="product-image">
-<img src="53328.png" alt="Fone Premium">
+<h3>🎧 Som Premium</h3>
+<p>
+Áudio cristalino com graves potentes e máxima imersão.
+</p>
 </div>
 
-<div class="special">
-ESPECIAL
+<div class="card">
+<h3>🔋 Longa Bateria</h3>
+<p>
+Horas de uso contínuo sem precisar carregar.
+</p>
 </div>
+
+<div class="card">
+<h3>✨ Design Luxuoso</h3>
+<p>
+Acabamento sofisticado premium.
+</p>
+</div>
+
+<div class="card">
+<h3>🚚 Frete Grátis</h3>
+<p>
+Entrega rápida para todo Brasil.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="offer">
+
+<h2>
+OFERTA ESPECIAL
+</h2>
 
 <div class="old-price">
 De R$ 299,90
@@ -380,47 +393,16 @@ De R$ 299,90
 R$ 149,90
 </div>
 
-<div class="shipping">
+<p>
 Frete grátis para todo Brasil por tempo limitado.
-</div>
+</p>
 
-<a href="https://pay.kaiross.com.br/sVVzOXcNmnyk" class="buy-btn">
+<a class="btn" style="background:black;" href="https://pay.kaiross.com.br/sVVzOXcNmnyk" target="_blank">
 COMPRAR AGORA
 </a>
 
 </div>
-</div>
 
-</section>
-
-<section class="benefits">
-
-<div class="benefit">
-<h3>🎧 Som Premium</h3>
-<p>
-Áudio limpo, potente e imersivo para músicas, jogos e chamadas.
-</p>
-</div>
-
-<div class="benefit">
-<h3>🔋 Longa Bateria</h3>
-<p>
-Horas de uso contínuo com carregamento rápido e eficiente.
-</p>
-</div>
-
-<div class="benefit">
-<h3>🚚 Frete Grátis</h3>
-<p>
-Entrega rápida e segura para qualquer região do Brasil.
-</p>
-</div>
-
-<div class="benefit">
-<h3>🔒 Compra Segura</h3>
-<p>
-Pagamento protegido e suporte completo para sua tranquilidade.
-</p>
 </div>
 
 </section>
@@ -428,718 +410,6 @@ Pagamento protegido e suporte completo para sua tranquilidade.
 <footer>
 © 2026 KAIROSS — Todos os direitos reservados.
 </footer>
-
-</div>
-
-<a href="https://pay.kaiross.com.br/sVVzOXcNmnyk" class="floating-btn">
-COMPRAR AGORA
-</a>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fone Bluetooth Premium</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:'Poppins',sans-serif;
-    }
-
-    body{
-      background:#050505;
-      color:#fff;
-      overflow-x:hidden;
-    }
-
-    .container{
-      width:90%;
-      max-width:1200px;
-      margin:auto;
-    }
-
-    header{
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:40px 0;
-      background: radial-gradient(circle at top,#1c1c1c 0%,#050505 70%);
-    }
-
-    .hero{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      align-items:center;
-      gap:60px;
-    }
-
-    .hero-text h1{
-      font-size:4rem;
-      line-height:1.1;
-      margin-bottom:25px;
-      font-weight:800;
-    }
-
-    .hero-text p{
-      font-size:1.15rem;
-      color:#d0d0d0;
-      line-height:1.8;
-      margin-bottom:35px;
-    }
-
-    .hero-image img,
-    .premium-grid img{
-      width:100%;
-      border-radius:35px;
-      box-shadow:0 0 40px rgba(0,0,0,0.7),0 25px 70px rgba(0,0,0,0.8);
-      transition:0.4s ease;
-    }
-
-    .hero-image img:hover,
-    .premium-grid img:hover{
-      transform:scale(1.02);
-    }
-
-    .btn{
-      display:inline-block;
-      padding:18px 35px;
-      border-radius:50px;
-      background:linear-gradient(90deg,#7b2ff7,#00c6ff);
-      color:#fff;
-      text-decoration:none;
-      font-size:1rem;
-      font-weight:700;
-      box-shadow:0 10px 30px rgba(123,47,247,0.5);
-      transition:0.3s;
-    }
-
-    .btn:hover{
-      transform:translateY(-3px) scale(1.03);
-    }
-
-    section{
-      padding:100px 0;
-    }
-
-    .section-title{
-      text-align:center;
-      font-size:3rem;
-      margin-bottom:60px;
-      font-weight:800;
-    }
-
-    .benefits{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:25px;
-    }
-
-    .card{
-      background:#111;
-      padding:35px;
-      border-radius:25px;
-      border:1px solid rgba(255,255,255,0.05);
-      transition:0.3s;
-    }
-
-    .card:hover{
-      transform:translateY(-10px);
-    }
-
-    .premium-section{
-      background:linear-gradient(to right,#0a0a0a,#111);
-    }
-
-    .premium-grid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:60px;
-      align-items:center;
-    }
-
-    .offer-box{
-      background:linear-gradient(135deg,#7b2ff7,#00c6ff);
-      padding:60px 40px;
-      border-radius:35px;
-      text-align:center;
-    }
-
-    .old-price{
-      text-decoration:line-through;
-      font-size:2rem;
-      opacity:0.8;
-    }
-
-    .new-price{
-      font-size:5rem;
-      font-weight:800;
-      margin:20px 0;
-    }
-
-    @media(max-width:900px){
-      .hero,
-      .premium-grid{
-        grid-template-columns:1fr;
-      }
-
-      .hero-text h1{
-        font-size:2.7rem;
-      }
-
-      .section-title{
-        font-size:2.3rem;
-      }
-
-      .new-price{
-        font-size:3.5rem;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <header>
-    <div class="container hero">
-
-      <div class="hero-text">
-        <h1>O Fone Bluetooth Premium Que Está Viralizando No Brasil</h1>
-
-        <p>Som imersivo, conforto extremo e acabamento premium.</p>
-
-        <a class="btn" href="https://pay.kaiross.com.br/iqE8DOFIg9wX" target="_blank">
-          QUERO O MEU AGORA
-        </a>
-      </div>
-
-      <div class="hero-image">
-        <img src="imagem%201.png" alt="Fone Bluetooth">
-      </div>
-
-    </div>
-  </header>
-
-  <section>
-    <div class="container">
-
-      <h2 class="section-title">Por Que Esse Fone Impressiona?</h2>
-
-      <div class="benefits">
-
-        <div class="card">
-          <h3>🔊 Som Premium</h3>
-          <p>Áudio cristalino e potente.</p>
-        </div>
-
-        <div class="card">
-          <h3>🔋 Bateria Longa</h3>
-          <p>Horas de uso sem preocupação.</p>
-        </div>
-
-        <div class="card">
-          <h3>🎧 Conforto Total</h3>
-          <p>Uso prolongado sem incômodo.</p>
-        </div>
-
-        <div class="card">
-          <h3>✨ Design Luxo</h3>
-          <p>Acabamento moderno premium.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="premium-section">
-    <div class="container premium-grid">
-
-      <div>
-        <img src="imagem%202.png" alt="Fone Premium">
-      </div>
-
-      <div>
-        <h2>Tecnologia e Liberdade</h2>
-        <p>Bluetooth rápido e som de alta qualidade.</p>
-
-        <a class="btn" href="https://pay.kaiross.com.br/iqE8DOFIg9wX" target="_blank">
-          APROVEITAR OFERTA
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-
-      <h2 class="section-title">O Que Estão Falando</h2>
-
-      <div class="reviews">
-
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>“Qualidade absurda!”</p>
-          <h4>Marcos Silva</h4>
-        </div>
-
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>“Muito confortável.”</p>
-          <h4>Amanda Costa</h4>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-
-      <div class="offer-box">
-
-        <h2>OFERTA ESPECIAL</h2>
-
-        <div class="old-price">De R$ 239,90</div>
-        <div class="new-price">R$ 139,90</div>
-
-        <p>Frete grátis para todo Brasil</p>
-
-        <a class="btn" style="background:#000;" href="https://pay.kaiross.com.br/iqE8DOFIg9wX">
-          COMPRAR AGORA
-        </a>
-
-      </div>
-
-    </div>
-  </section>
-
-</body>
-</
-  <!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fone Bluetooth Premium</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:'Poppins',sans-serif;
-    }
-
-    body{
-      background:#050505;
-      color:#fff;
-      overflow-x:hidden;
-    }
-
-    html{
-      scroll-behavior:smooth;
-    }
-
-    .container{
-      width:90%;
-      max-width:1200px;
-      margin:auto;
-    }
-
-    header{
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:40px 0;
-      background: radial-gradient(circle at top,#1c1c1c 0%,#050505 70%);
-    }
-
-    .hero{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      align-items:center;
-      gap:60px;
-    }
-
-    .hero-text h1{
-      font-size:4rem;
-      line-height:1.1;
-      margin-bottom:25px;
-      font-weight:800;
-    }
-
-    .hero-text p{
-      font-size:1.15rem;
-      color:#d0d0d0;
-      line-height:1.8;
-      margin-bottom:35px;
-    }
-
-    .hero-image img,
-    .premium-grid img{
-      width:100%;
-      border-radius:35px;
-      box-shadow:0 0 40px rgba(0,0,0,0.7),0 25px 70px rgba(0,0,0,0.8);
-      transition:0.4s ease;
-    }
-
-    .hero-image img:hover,
-    .premium-grid img:hover{
-      transform:scale(1.02);
-    }
-
-    .btn{
-      display:inline-block;
-      padding:18px 35px;
-      border-radius:50px;
-      background:linear-gradient(90deg,#7b2ff7,#00c6ff);
-      color:#fff;
-      text-decoration:none;
-      font-size:1rem;
-      font-weight:700;
-      box-shadow:0 10px 30px rgba(123,47,247,0.5);
-      transition:0.3s;
-    }
-
-    .btn:hover{
-      transform:translateY(-3px) scale(1.03);
-    }
-
-    .floating-btn{
-      position:fixed;
-      bottom:20px;
-      right:20px;
-      z-index:999;
-      animation:pulse 2s infinite;
-    }
-
-    @keyframes pulse{
-      0%{
-        transform:scale(1);
-      }
-      50%{
-        transform:scale(1.05);
-      }
-      100%{
-        transform:scale(1);
-      }
-    }
-
-    section{
-      padding:100px 0;
-    }
-
-    .section-title{
-      text-align:center;
-      font-size:3rem;
-      margin-bottom:60px;
-      font-weight:800;
-    }
-
-    .benefits{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:25px;
-    }
-
-    .card{
-      background:#111;
-      padding:35px;
-      border-radius:25px;
-      border:1px solid rgba(255,255,255,0.05);
-      transition:0.3s;
-    }
-
-    .card:hover{
-      transform:translateY(-10px);
-      border-color:#7b2ff7;
-    }
-
-    .card h3{
-      margin-bottom:15px;
-      font-size:1.4rem;
-    }
-
-    .card p{
-      color:#d0d0d0;
-      line-height:1.8;
-    }
-
-    .premium-section{
-      background:linear-gradient(to right,#0a0a0a,#111);
-    }
-
-    .premium-grid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:60px;
-      align-items:center;
-    }
-
-    .premium-grid h2{
-      font-size:3rem;
-      margin-bottom:25px;
-    }
-
-    .premium-grid p{
-      color:#d0d0d0;
-      line-height:1.9;
-      margin-bottom:30px;
-    }
-
-    .reviews{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-      gap:25px;
-    }
-
-    .review-card{
-      background:#111;
-      padding:30px;
-      border-radius:25px;
-    }
-
-    .stars{
-      color:#ffd700;
-      margin-bottom:15px;
-      font-size:1.3rem;
-    }
-
-    .review-card p{
-      color:#d0d0d0;
-      line-height:1.8;
-      margin-bottom:15px;
-    }
-
-    .offer-box{
-      background:linear-gradient(135deg,#7b2ff7,#00c6ff);
-      padding:60px 40px;
-      border-radius:35px;
-      text-align:center;
-    }
-
-    .offer-box h2{
-      font-size:3rem;
-      margin-bottom:20px;
-    }
-
-    .old-price{
-      text-decoration:line-through;
-      font-size:2rem;
-      opacity:0.8;
-    }
-
-    .new-price{
-      font-size:5rem;
-      font-weight:800;
-      margin:20px 0;
-    }
-
-    .offer-box p{
-      font-size:1.2rem;
-      margin-bottom:30px;
-    }
-
-    @media(max-width:900px){
-
-      .hero,
-      .premium-grid{
-        grid-template-columns:1fr;
-      }
-
-      .hero-text{
-        text-align:center;
-      }
-
-      .hero-text h1{
-        font-size:2.7rem;
-      }
-
-      .section-title{
-        font-size:2.3rem;
-      }
-
-      .premium-grid h2{
-        font-size:2.2rem;
-      }
-
-      .new-price{
-        font-size:3.5rem;
-      }
-
-      .floating-btn{
-        bottom:15px;
-        right:15px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <a class="btn floating-btn" href="https://pay.kaiross.com.br/iqE8DOFIg9wX" target="_blank">
-    COMPRAR AGORA
-  </a>
-
-  <header>
-    <div class="container hero">
-
-      <div class="hero-text">
-        <h1>O Fone Bluetooth Premium Que Está Viralizando No Brasil</h1>
-
-        <p>
-          Som imersivo, conforto extremo e acabamento premium.
-          Tenha uma experiência sonora absurda com design luxuoso.
-        </p>
-
-        <a class="btn" href="https://pay.kaiross.com.br/iqE8DOFIg9wX" target="_blank">
-          QUERO O MEU AGORA
-        </a>
-      </div>
-
-      <div class="hero-image">
-        <img src="imagem 3.png" alt="Fone Bluetooth">
-      </div>
-
-    </div>
-  </header>
-
-  <section>
-    <div class="container">
-
-      <h2 class="section-title">Por Que Esse Fone Impressiona?</h2>
-
-      <div class="benefits">
-
-        <div class="card">
-          <h3>🔊 Som Premium</h3>
-          <p>
-            Áudio cristalino com graves potentes e máxima imersão.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>🔋 Bateria Longa</h3>
-          <p>
-            Horas de uso contínuo sem precisar carregar.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>🎧 Conforto Total</h3>
-          <p>
-            Almofadas ultra macias para uso prolongado.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>✨ Design Luxuoso</h3>
-          <p>
-            Acabamento sofisticado inspirado nos modelos premium.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="premium-section">
-    <div class="container premium-grid">
-
-      <div>
-        <img src="imagem 3.png" alt="Fone Premium">
-      </div>
-
-      <div>
-        <h2>Tecnologia e Liberdade Sem Fios</h2>
-
-        <p>
-          Bluetooth rápido, conexão estável e qualidade sonora impressionante.
-          Ideal para músicas, chamadas, academia, trabalho e lazer.
-        </p>
-
-        <a class="btn" href="https://pay.kaiross.com.br/iqE8DOFIg9wX" target="_blank">
-          APROVEITAR OFERTA
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-
-      <h2 class="section-title">O Que Estão Falando</h2>
-
-      <div class="reviews">
-
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>
-            “Qualidade absurda, parece um fone muito mais caro.”
-          </p>
-          <h4>Marcos Silva</h4>
-        </div>
-
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>
-            “Muito confortável e a bateria dura bastante.”
-          </p>
-          <h4>Amanda Costa</h4>
-        </div>
-
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>
-            “O acabamento premium impressiona demais.”
-          </p>
-          <h4>Felipe Rocha</h4>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-
-      <div class="offer-box">
-
-        <h2>OFERTA ESPECIAL</h2>
-
-        <div class="old-price">De R$ 239,90</div>
-
-        <div class="new-price">R$ 139,90</div>
-
-        <p>
-          Frete grátis para todo Brasil por tempo limitado.
-        </p>
-
-        <a class="btn" style="background:#000;" href="https://pay.kaiross.com.br/iqE8DOFIg9wX" target="_blank">
-          COMPRAR AGORA
-        </a>
-
-      </div>
-
-    </div>
-  </section>
 
 </body>
 </html>
