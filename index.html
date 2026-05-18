@@ -1,3 +1,102 @@
+
+"use client";
+
+import React from "react";
+
+export default function KairossStore() {
+  const products = [
+    {
+      id: 1,
+      name: "Relógio Digital SKMEI",
+      price: "R$ 91,41",
+      image: "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?q=80&w=1200&auto=format&fit=crop",
+      description: "Relógio esportivo resistente à água com múltiplas funções inteligentes.",
+      paymentLink: "https://pay.kaiross.com.br/Bq3bGLiJWxUs",
+    },
+    {
+      id: 2,
+      name: "AirPods Pro 3 Premium",
+      price: "R$ 148,39",
+      image: "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?q=80&w=1200&auto=format&fit=crop",
+      description: "Cancelamento de ruído premium e áudio imersivo Bluetooth 5.3.",
+      paymentLink: "https://pay.kaiross.com.br/fjoALAsUq9Zx",
+    },
+    {
+      id: 3,
+      name: "Carregador Portátil 10000mAh",
+      price: "R$ 110,86",
+      image: "https://images.unsplash.com/photo-1585338447937-7082f8fc763d?q=80&w=1200&auto=format&fit=crop",
+      description: "Power bank rápido com display LED e dupla saída USB.",
+      paymentLink: "https://pay.kaiross.com.br/Soj33EG65XyB",
+    },
+  ];
+
+  return (
+    <main className="min-h-screen bg-black text-white">
+      <section className="bg-gradient-to-r from-purple-700 via-blue-600 to-cyan-500 py-24 px-6 text-center">
+        <h1 className="text-6xl md:text-8xl font-black mb-6">KAIROSS</h1>
+
+        <p className="max-w-3xl mx-auto text-lg md:text-2xl text-white/90">
+          Tecnologia • Inovação • Performance
+        </p>
+
+        <div className="mt-10">
+          <a
+            href="#produtos"
+            className="bg-white text-black font-black px-10 py-5 rounded-full text-lg hover:scale-105 transition inline-block"
+          >
+            COMPRAR AGORA
+          </a>
+        </div>
+      </section>
+
+      <section id="produtos" className="max-w-7xl mx-auto py-20 px-6">
+        <h2 className="text-5xl font-black text-center mb-16">
+          Produtos Kaiross
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {products.map((product) => (
+            <div
+              key={product.id}
+              className="bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 shadow-2xl"
+            >
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full h-80 object-cover"
+              />
+
+              <div className="p-8">
+                <h3 className="text-3xl font-black mb-4">{product.name}</h3>
+
+                <p className="text-zinc-400 leading-relaxed mb-6">
+                  {product.description}
+                </p>
+
+                <div className="text-4xl font-black text-cyan-400 mb-8">
+                  {product.price}
+                </div>
+
+                <a
+                  href={product.paymentLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full text-center bg-gradient-to-r from-cyan-500 to-purple-600 py-5 rounded-full text-xl font-black hover:scale-105 transition"
+                >
+                  🔥 COMPRAR AGORA
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </main>
+  );
+}
+
+
+
 "use client";
 
 export default function KairossStore() {
