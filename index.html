@@ -1,1 +1,272 @@
+export default function KairossStore() {
+  const products = [
+    {
+      id: 1,
+      name: 'Relógio Digital SKMEI',
+      price: 'R$ 91,41',
+      image: 'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?q=80&w=1200&auto=format&fit=crop',
+      description: 'Relógio esportivo resistente à água com múltiplas funções inteligentes.',
+      paymentLink: 'https://pay.kaiross.com.br/Bq3bGLiJWxUs',
+    },
+    {
+      id: 2,
+      name: 'AirPods Pro 3 Premium',
+      price: 'R$ 148,39',
+      image: 'https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?q=80&w=1200&auto=format&fit=crop',
+      description: 'Cancelamento de ruído premium e áudio imersivo Bluetooth 5.3.',
+      paymentLink: 'https://pay.kaiross.com.br/fjoALAsUq9Zx',
+    },
+    {
+      id: 3,
+      name: 'Carregador Portátil 10000mAh',
+      price: 'R$ 110,86',
+      image: 'https://images.unsplash.com/photo-1585338447937-7082f8fc763d?q=80&w=1200&auto=format&fit=crop',
+      description: 'Power bank rápido com display LED e dupla saída USB.',
+      paymentLink: 'https://pay.kaiross.com.br/Soj33EG65XyB',
+    },
+    {
+      id: 4,
+      name: 'Kit Teclado e Mouse Bluetooth',
+      price: 'R$ 207,21',
+      image: 'https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?q=80&w=1200&auto=format&fit=crop',
+      description: 'Setup moderno bluetooth compatível com Android, iOS e Windows.',
+      paymentLink: 'https://pay.kaiross.com.br/2ONPuueqvvpB',
+    },
+    {
+      id: 5,
+      name: 'Robô Aspirador Inteligente',
+      price: 'R$ 284,21',
+      image: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?q=80&w=1200&auto=format&fit=crop',
+      description: 'Aspiração inteligente com sensores e filtros HEPA.',
+      paymentLink: 'https://pay.kaiross.com.br/PQJAepPjacek',
+    },
+    {
+      id: 6,
+      name: 'Mini Pistola Massageadora',
+      price: 'R$ 212,21',
+      image: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop',
+      description: 'Relaxamento muscular profundo com 6 níveis de velocidade.',
+      paymentLink: 'https://pay.kaiross.com.br/2A6lVvRGyteT',
+    },
+    {
+      id: 7,
+      name: 'Boombox Robust Premium',
+      price: 'R$ 521,14',
+      image: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?q=80&w=1200&auto=format&fit=crop',
+      description: 'Som potente Bluetooth 5.1 com design resistente.',
+      paymentLink: 'https://pay.kaiross.com.br/vv4PBdg0dp67',
+    },
+    {
+      id: 8,
+      name: 'Carregador Magnético 20W',
+      price: 'R$ 113,20',
+      image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=1200&auto=format&fit=crop',
+      description: 'Carregamento rápido magnético com indução inteligente.',
+      paymentLink: 'https://pay.kaiross.com.br/EbpjfUPb0gcI',
+    },
+    {
+      id: 9,
+      name: 'Bolsa Esportiva T60',
+      price: 'R$ 386,26',
+      image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop',
+      description: 'Bolsa multifuncional premium ideal para viagens e academia.',
+      paymentLink: 'https://pay.kaiross.com.br/QykQlQTDlOCB',
+    },
+  ];
 
+  return (
+    <div className="bg-black text-white min-h-screen overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center px-6 py-20 bg-gradient-to-br from-[#020617] via-black to-[#0f172a]">
+        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-cyan-500/20 blur-[180px] rounded-full" />
+        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-purple-600/20 blur-[180px] rounded-full" />
+
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
+          <div>
+            <div className="inline-flex items-center gap-3 px-5 py-3 rounded-full border border-cyan-500/30 bg-white/5 backdrop-blur-xl mb-8">
+              <div className="w-3 h-3 bg-cyan-400 rounded-full animate-pulse" />
+              <span className="uppercase tracking-[5px] text-cyan-300 text-sm font-bold">
+                Loja Oficial Kaiross
+              </span>
+            </div>
+
+            <h1 className="text-6xl md:text-8xl font-black leading-none bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-500 bg-clip-text text-transparent drop-shadow-[0_0_35px_rgba(34,211,238,0.8)]">
+              KAIROSS
+            </h1>
+
+            <p className="mt-8 text-zinc-300 text-xl leading-relaxed max-w-2xl">
+              Descubra produtos tecnológicos premium com design futurista,
+              inovação e performance. A Kaiross entrega qualidade, estilo e
+              experiência profissional em cada detalhe.
+            </p>
+
+            <div className="flex flex-wrap gap-5 mt-10">
+              <a
+                href="#produtos"
+                className="px-10 py-5 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-black text-lg shadow-[0_0_40px_rgba(34,211,238,0.7)] hover:scale-105 transition-all duration-300"
+              >
+                COMPRAR AGORA
+              </a>
+
+              <a
+                href="#beneficios"
+                className="px-10 py-5 rounded-full border border-white/20 bg-white/5 backdrop-blur-xl font-bold hover:bg-white/10 transition-all duration-300"
+              >
+                VER BENEFÍCIOS
+              </a>
+            </div>
+
+            <div className="grid grid-cols-3 gap-8 mt-16">
+              <div>
+                <h3 className="text-4xl font-black text-cyan-400">+10K</h3>
+                <p className="text-zinc-400 mt-2">Clientes felizes</p>
+              </div>
+
+              <div>
+                <h3 className="text-4xl font-black text-cyan-400">24h</h3>
+                <p className="text-zinc-400 mt-2">Suporte Premium</p>
+              </div>
+
+              <div>
+                <h3 className="text-4xl font-black text-cyan-400">100%</h3>
+                <p className="text-zinc-400 mt-2">Pagamento Seguro</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative flex justify-center">
+            <img
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop"
+              alt="Kaiross"
+              className="rounded-[40px] shadow-[0_0_80px_rgba(34,211,238,0.35)] border border-white/10"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="beneficios" className="py-24 px-6">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
+          {[
+            'Entrega Rápida',
+            'Produtos Premium',
+            'Pagamento Seguro',
+            'Alta Qualidade',
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="bg-white/5 border border-white/10 rounded-[30px] p-8 backdrop-blur-xl text-center hover:-translate-y-2 transition-all duration-300"
+            >
+              <div className="text-5xl mb-5">⚡</div>
+              <h3 className="text-2xl font-black">{item}</h3>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="produtos" className="py-24 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-20">
+            <span className="uppercase tracking-[6px] text-cyan-400 font-bold text-sm">
+              Produtos Premium
+            </span>
+
+            <h2 className="text-5xl md:text-7xl font-black mt-6 bg-gradient-to-r from-white via-cyan-300 to-purple-400 bg-clip-text text-transparent">
+              Produtos Kaiross
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            {products.map((product) => (
+              <div
+                key={product.id}
+                className="group relative bg-white/5 border border-white/10 rounded-[35px] overflow-hidden backdrop-blur-xl hover:-translate-y-3 transition-all duration-500 shadow-[0_0_40px_rgba(34,211,238,0.15)]"
+              >
+                <div className="overflow-hidden">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-[340px] object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                </div>
+
+                <div className="p-8">
+                  <h3 className="text-3xl font-black leading-tight">
+                    {product.name}
+                  </h3>
+
+                  <p className="text-zinc-400 mt-4 leading-relaxed text-lg">
+                    {product.description}
+                  </p>
+
+                  <div className="mt-8 flex items-center justify-between">
+                    <div>
+                      <p className="text-zinc-500 text-sm">Valor promocional</p>
+                      <h4 className="text-4xl font-black text-cyan-400">
+                        {product.price}
+                      </h4>
+                    </div>
+                  </div>
+
+                  <a
+                    href={product.paymentLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-8 w-full inline-flex items-center justify-center px-8 py-5 rounded-full bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600 text-white font-black text-lg shadow-[0_0_35px_rgba(34,211,238,0.7)] hover:scale-[1.03] transition-all duration-300"
+                  >
+                    🔥 COMPRAR AGORA
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 px-6">
+        <div className="max-w-6xl mx-auto bg-gradient-to-r from-cyan-500/10 to-purple-500/10 border border-white/10 rounded-[40px] p-12 text-center backdrop-blur-xl">
+          <h2 className="text-5xl font-black leading-tight">
+            Tecnologia Premium com Visual Futurista.
+          </h2>
+
+          <p className="text-zinc-300 mt-8 text-xl max-w-3xl mx-auto leading-relaxed">
+            Produtos selecionados com qualidade premium, inovação e design moderno.
+            Aproveite as ofertas exclusivas da Kaiross e transforme sua experiência.
+          </p>
+
+          <a
+            href="#produtos"
+            className="inline-flex mt-10 px-12 py-5 rounded-full bg-gradient-to-r from-purple-600 to-cyan-500 text-white font-black text-xl shadow-[0_0_40px_rgba(168,85,247,0.7)] hover:scale-105 transition-all duration-300"
+          >
+            QUERO APROVEITAR AS OFERTAS
+          </a>
+        </div>
+      </section>
+
+      <footer className="border-t border-white/10 py-12 text-center text-zinc-500 px-6">
+        <h2 className="text-5xl font-black bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+          KAIROSS
+        </h2>
+
+        <p className="mt-5 text-lg">
+          Tecnologia • Inovação • Performance
+        </p>
+
+        <p className="mt-8 text-sm">
+          © 2026 Kaiross Store. Todos os direitos reservados.
+        </p>
+      </footer>
+
+      <a
+        href="#produtos"
+        className="fixed bottom-6 right-6 z-50"
+      >
+        <div className="relative group">
+          <div className="absolute inset-0 bg-cyan-400 blur-2xl rounded-full opacity-70 group-hover:opacity-100 transition-all duration-300" />
+
+          <div className="relative w-20 h-20 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 flex items-center justify-center text-3xl shadow-[0_0_50px_rgba(34,211,238,0.8)] hover:scale-110 transition-all duration-300">
+            🛒
+          </div>
+        </div>
+      </a>
+    </div>
+  );
+}
