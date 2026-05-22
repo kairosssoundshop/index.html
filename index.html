@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Kaiross Pay | Loja Oficial</title>
+<title>Kaiross Pay | WhatsApp Oficial</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -43,14 +43,29 @@ padding:20px;
 }
 
 header{
-padding:20px 0;
 display:flex;
 justify-content:space-between;
 align-items:center;
+padding:20px 0;
 }
 
 .logo{
-font-size:32px;
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+width:75px;
+height:75px;
+border-radius:50%;
+object-fit:cover;
+border:2px solid #00ff88;
+box-shadow:0 0 20px rgba(0,255,136,.5);
+}
+
+.logo h1{
+font-size:34px;
 font-weight:900;
 background:linear-gradient(90deg,#00ff88,#00cc66);
 -webkit-background-clip:text;
@@ -64,7 +79,7 @@ align-items:center;
 justify-content:center;
 gap:60px;
 flex-wrap:wrap;
-padding:50px 0;
+padding:40px 0;
 }
 
 .hero-text{
@@ -72,40 +87,40 @@ flex:1;
 min-width:320px;
 }
 
-.hero-text span{
-color:#00ff88;
-}
-
-.hero-text h1{
-font-size:65px;
+.hero-text h2{
+font-size:70px;
 line-height:1.1;
 margin-bottom:25px;
 font-weight:900;
 }
 
+.hero-text span{
+color:#00ff88;
+}
+
 .hero-text p{
 font-size:20px;
-color:#cfcfcf;
 line-height:1.8;
+color:#cfcfcf;
 margin-bottom:35px;
 }
 
 .btn{
 display:inline-block;
-padding:18px 40px;
-border-radius:15px;
-text-decoration:none;
-font-size:20px;
-font-weight:700;
+padding:18px 42px;
+border-radius:16px;
 background:linear-gradient(90deg,#00ff88,#00cc66);
 color:#000;
+font-size:20px;
+font-weight:800;
+text-decoration:none;
 transition:.3s;
-box-shadow:0 0 30px rgba(0,255,136,.4);
+box-shadow:0 0 30px rgba(0,255,136,.35);
 }
 
 .btn:hover{
 transform:translateY(-5px) scale(1.03);
-box-shadow:0 0 40px rgba(0,255,136,.7);
+box-shadow:0 0 45px rgba(0,255,136,.7);
 }
 
 .hero-image{
@@ -117,8 +132,8 @@ min-width:320px;
 
 .hero-image img{
 width:100%;
-max-width:500px;
-border-radius:25px;
+max-width:520px;
+border-radius:30px;
 border:3px solid #00ff88;
 box-shadow:0 0 50px rgba(0,255,136,.25);
 }
@@ -129,9 +144,9 @@ padding:100px 0;
 
 .section-title{
 text-align:center;
-font-size:50px;
-margin-bottom:70px;
+font-size:52px;
 font-weight:900;
+margin-bottom:70px;
 }
 
 .cards{
@@ -142,82 +157,42 @@ gap:25px;
 
 .card{
 background:rgba(255,255,255,.05);
-border:1px solid rgba(0,255,136,.15);
 padding:35px;
 border-radius:25px;
-backdrop-filter:blur(10px);
+border:1px solid rgba(0,255,136,.15);
 transition:.3s;
+backdrop-filter:blur(10px);
 }
 
 .card:hover{
 transform:translateY(-10px);
 border-color:#00ff88;
-box-shadow:0 0 35px rgba(0,255,136,.2);
+box-shadow:0 0 35px rgba(0,255,136,.25);
 }
 
 .card h3{
-font-size:25px;
+font-size:24px;
 margin-bottom:15px;
 color:#00ff88;
 }
 
 .card p{
-color:#d1d1d1;
-line-height:1.7;
-}
-
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-}
-
-.product{
-background:#0c0c0c;
-border-radius:25px;
-overflow:hidden;
-border:1px solid rgba(0,255,136,.15);
-transition:.3s;
-}
-
-.product:hover{
-transform:translateY(-10px);
-box-shadow:0 0 35px rgba(0,255,136,.2);
-}
-
-.product img{
-width:100%;
-height:260px;
-object-fit:cover;
-}
-
-.product-content{
-padding:25px;
-}
-
-.product-content h3{
-font-size:24px;
-margin-bottom:15px;
-}
-
-.product-content p{
-color:#ccc;
-margin-bottom:25px;
+color:#d0d0d0;
 line-height:1.7;
 }
 
 .cta{
-text-align:center;
 padding:120px 20px;
-background:linear-gradient(180deg,#05110b,#000);
+text-align:center;
+background:linear-gradient(180deg,#07130d,#000);
 border-top:1px solid rgba(0,255,136,.1);
 border-bottom:1px solid rgba(0,255,136,.1);
 }
 
 .cta h2{
 font-size:60px;
-margin-bottom:20px;
 font-weight:900;
+margin-bottom:20px;
 }
 
 .cta p{
@@ -234,25 +209,29 @@ color:#777;
 
 @media(max-width:768px){
 
-.hero-text h1{
+.hero-text h2{
 font-size:42px;
 }
 
 .section-title{
-font-size:36px;
+font-size:38px;
 }
 
 .cta h2{
 font-size:38px;
 }
 
+.btn{
+width:100%;
+text-align:center;
+}
+
 .hero{
 padding-top:20px;
 }
 
-.btn{
-width:100%;
-text-align:center;
+.logo h1{
+font-size:24px;
 }
 
 }
@@ -267,7 +246,12 @@ text-align:center;
 <header>
 
 <div class="logo">
-KAIROSS PAY
+
+<!-- SUA FOTO -->
+<img src="imagem9.png" alt="Kaiross Pay">
+
+<h1>KAIROSS PAY</h1>
+
 </div>
 
 </header>
@@ -276,13 +260,13 @@ KAIROSS PAY
 
 <div class="hero-text">
 
-<h1>
-A Melhor Loja Online <span>Para Produtos Premium</span>
-</h1>
+<h2>
+Loja Oficial <span>Kaiross Pay</span>
+</h2>
 
 <p>
-Tecnologia, inovação e qualidade em um só lugar.
-Compre produtos modernos com atendimento rápido e suporte direto no WhatsApp.
+Atendimento rápido, suporte profissional e produtos modernos diretamente no WhatsApp.
+Uma experiência premium para clientes que buscam qualidade e confiança.
 </p>
 
 <a href="https://wa.me/message/JUGFVOUFRKS6C1" target="_blank" class="btn">
@@ -293,7 +277,8 @@ CHAMAR NO WHATSAPP
 
 <div class="hero-image">
 
-<img src="59791.webp" alt="Kaiross Pay">
+<!-- FOTO PRINCIPAL -->
+<img src="imagem9.png" alt="Kaiross Pay">
 
 </div>
 
@@ -314,105 +299,29 @@ Por Que Comprar Na Kaiross Pay?
 <div class="card">
 <h3>⚡ Atendimento Rápido</h3>
 <p>
-Fale diretamente conosco pelo WhatsApp e receba suporte rápido e profissional.
+Fale diretamente pelo WhatsApp com suporte rápido e atendimento profissional.
 </p>
 </div>
 
 <div class="card">
 <h3>🛡️ Compra Segura</h3>
 <p>
-Produtos de qualidade com total segurança e confiança na sua compra.
+Mais confiança, segurança e qualidade em cada atendimento realizado.
 </p>
 </div>
 
 <div class="card">
-<h3>🚀 Tecnologia Premium</h3>
+<h3>🚀 Loja Premium</h3>
 <p>
-Selecionamos os melhores produtos modernos e tecnológicos do mercado.
+Visual moderno, experiência profissional e atendimento diferenciado.
 </p>
 </div>
 
 <div class="card">
-<h3>💎 Visual Profissional</h3>
+<h3>💎 Suporte Exclusivo</h3>
 <p>
-Uma experiência premium desde o primeiro clique até a finalização da compra.
+Equipe preparada para atender você antes e depois da compra.
 </p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<div class="container">
-
-<h2 class="section-title">
-Produtos Em Destaque
-</h2>
-
-<div class="products">
-
-<div class="product">
-
-<img src="https://images.unsplash.com/photo-1589903308904-1010c2294adc?q=80&w=1200&auto=format&fit=crop" alt="Produto">
-
-<div class="product-content">
-
-<h3>Microfone Sem Fio</h3>
-
-<p>
-Áudio profissional com conexão estável e qualidade premium para gravações, lives e vídeos.
-</p>
-
-<a href="https://wa.me/message/JUGFVOUFRKS6C1" target="_blank" class="btn">
-Comprar Agora
-</a>
-
-</div>
-
-</div>
-
-<div class="product">
-
-<img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=1200&auto=format&fit=crop" alt="Produto">
-
-<div class="product-content">
-
-<h3>Fones Premium</h3>
-
-<p>
-Experiência sonora de alta qualidade com design moderno e confortável.
-</p>
-
-<a href="https://wa.me/message/JUGFVOUFRKS6C1" target="_blank" class="btn">
-Comprar Agora
-</a>
-
-</div>
-
-</div>
-
-<div class="product">
-
-<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1200&auto=format&fit=crop" alt="Produto">
-
-<div class="product-content">
-
-<h3>Produtos Tech</h3>
-
-<p>
-Tecnologia moderna e acessórios inteligentes para o seu dia a dia.
-</p>
-
-<a href="https://wa.me/message/JUGFVOUFRKS6C1" target="_blank" class="btn">
-Comprar Agora
-</a>
-
-</div>
-
 </div>
 
 </div>
@@ -426,11 +335,11 @@ Comprar Agora
 <div class="container">
 
 <h2>
-Garanta Já o Seu Produto
+Compre Agora Pelo WhatsApp
 </h2>
 
 <p>
-Clique no botão abaixo e fale agora com a equipe Kaiross Pay.
+Clique no botão abaixo e fale diretamente com a equipe Kaiross Pay.
 </p>
 
 <a href="https://wa.me/message/JUGFVOUFRKS6C1" target="_blank" class="btn">
