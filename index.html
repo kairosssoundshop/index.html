@@ -1,657 +1,478 @@
-
-
-<section class="section">
-
-<h2 class="title">
-Design Premium e Tecnologia Profissional
-</h2>
-
-<p class="subtitle">
-Conheça todos os acessórios da Escova Secadora 5 em 1.
-Tecnologia moderna, acabamento premium e resultado impecável.
-</p>
-
-<div class="gallery">
-
-<div class="gallery-card">
-<img src="./imagem22.png" alt="Imagem Produto 22">
-</div>
-
-<div class="gallery-card">
-<img src="./imagem23.png" alt="Imagem Produto 23">
-</div>
-
-<div class="gallery-card">
-<img src="./imagem24.png" alt="Imagem Produto 24">
-</div>
-
-</div>
-
-</section>
-
-<style>
-
-/* ========================= */
-/* GALERIA PREMIUM */
-/* ========================= */
-
-.gallery{
-width:100%;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:35px;
-margin-top:60px;
-}
-
-.gallery-card{
-position:relative;
-overflow:hidden;
-border-radius:35px;
-background:linear-gradient(180deg,#111,#050505);
-border:1px solid rgba(255,255,255,.08);
-transition:0.4s;
-box-shadow:0 0 40px rgba(255,0,170,.18);
-}
-
-.gallery-card:hover{
-transform:translateY(-10px) scale(1.02);
-border-color:#ff00c8;
-box-shadow:0 0 70px rgba(255,0,170,.35);
-}
-
-.gallery-card::before{
-content:'';
-position:absolute;
-width:180px;
-height:180px;
-background:radial-gradient(circle,#ff00c8 0%,transparent 70%);
-top:-70px;
-right:-70px;
-opacity:.15;
-z-index:1;
-}
-
-.gallery-card img{
-width:100%;
-display:block;
-transition:0.5s;
-position:relative;
-z-index:2;
-}
-
-.gallery-card:hover img{
-transform:scale(1.04);
-}
-
-/* RESPONSIVO */
-
-@media(max-width:768px){
-
-.gallery{
-grid-template-columns:1fr;
-}
-
-}
-
-</style>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Kaiross Beauty - Secadora 5 em 1</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Secadora 5 em 1 Profissional</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-<style>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
+    body{
+      background:#0a0a0a;
+      color:#fff;
+      overflow-x:hidden;
+    }
 
-body{
-    background:#050505;
-    color:#fff;
-    overflow-x:hidden;
-}
+    html{
+      scroll-behavior:smooth;
+    }
 
-::-webkit-scrollbar{
-    width:8px;
-}
+    .gradient{
+      background:linear-gradient(135deg,#ff6b00,#ff008c,#c0c0c0);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
 
-::-webkit-scrollbar-thumb{
-    background:linear-gradient(180deg,#ff7b00,#ff00c8);
-    border-radius:20px;
-}
+    header{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:40px 20px;
+      position:relative;
+      background:
+      radial-gradient(circle at top,#ff008c55 0%,transparent 40%),
+      radial-gradient(circle at bottom,#ff6b0050 0%,transparent 40%),
+      #050505;
+    }
 
-/* HERO */
+    .container{
+      max-width:1200px;
+      margin:auto;
+      width:100%;
+    }
 
-.hero{
-    min-height:100vh;
-    background:
-    linear-gradient(to bottom,rgba(0,0,0,.8),rgba(0,0,0,.95)),
-    url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1600&auto=format&fit=crop');
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:60px 5%;
-    position:relative;
-}
+    .hero{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:50px;
+      align-items:center;
+    }
 
-.glow{
-    position:absolute;
-    width:500px;
-    height:500px;
-    background:radial-gradient(circle,#ff7300 0%,transparent 70%);
-    opacity:.2;
-    filter:blur(60px);
-    top:-150px;
-    right:-150px;
-}
+    .hero img{
+      width:100%;
+      max-width:520px;
+      display:block;
+      margin:auto;
+      filter:drop-shadow(0 0 40px #ff008c90);
+      animation:float 4s ease-in-out infinite;
+    }
 
-.hero-content{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
-    align-items:center;
-    max-width:1400px;
-    width:100%;
-}
+    @keyframes float{
+      0%{transform:translateY(0px);}
+      50%{transform:translateY(-15px);}
+      100%{transform:translateY(0px);}
+    }
 
-.logo-card{
-    background:rgba(255,255,255,.03);
-    border:1px solid rgba(255,255,255,.1);
-    backdrop-filter:blur(12px);
-    border-radius:35px;
-    overflow:hidden;
-    box-shadow:0 0 60px rgba(255,102,0,.2);
-}
+    .hero-text h1{
+      font-size:58px;
+      line-height:1.1;
+      margin-bottom:20px;
+      font-weight:800;
+    }
 
-.logo-card img{
-    width:100%;
-    display:block;
-}
+    .hero-text p{
+      font-size:19px;
+      color:#d8d8d8;
+      margin-bottom:30px;
+      line-height:1.7;
+    }
 
-.hero-text h1{
-    font-size:4rem;
-    line-height:1.1;
-    margin-bottom:25px;
-    font-weight:800;
-}
+    .price-box{
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.08);
+      padding:25px;
+      border-radius:25px;
+      backdrop-filter:blur(10px);
+      margin-bottom:25px;
+      box-shadow:0 10px 40px rgba(0,0,0,.4);
+    }
 
-.gradient{
-    background:linear-gradient(90deg,#ff7b00,#ff00c8,#d9d9d9);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-}
+    .old-price{
+      text-decoration:line-through;
+      color:#999;
+      font-size:22px;
+    }
 
-.hero-text p{
-    font-size:1.2rem;
-    color:#d6d6d6;
-    margin-bottom:35px;
-    line-height:1.8;
-}
+    .new-price{
+      font-size:55px;
+      font-weight:800;
+      background:linear-gradient(135deg,#ff6b00,#ff008c,#ffffff);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
 
-.btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    padding:18px 40px;
-    border:none;
-    border-radius:60px;
-    font-size:1.1rem;
-    font-weight:700;
-    cursor:pointer;
-    text-decoration:none;
-    color:#fff;
-    background:linear-gradient(135deg,#ff7b00,#ff00c8,#c0c0c0);
-    background-size:300% 300%;
-    animation:gradientMove 6s ease infinite;
-    box-shadow:0 10px 35px rgba(255,0,170,.35);
-    transition:.3s;
-}
+    .pix{
+      color:#ccc;
+      font-size:15px;
+      margin-top:5px;
+    }
 
-.btn:hover{
-    transform:translateY(-5px) scale(1.03);
-}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:18px 40px;
+      border-radius:100px;
+      background:linear-gradient(135deg,#ff6b00,#ff008c,#c0c0c0);
+      color:#fff;
+      text-decoration:none;
+      font-weight:700;
+      font-size:18px;
+      transition:.3s;
+      box-shadow:0 10px 30px rgba(255,0,140,.35);
+      border:none;
+    }
 
-@keyframes gradientMove{
-    0%{background-position:0% 50%;}
-    50%{background-position:100% 50%;}
-    100%{background-position:0% 50%;}
-}
+    .btn:hover{
+      transform:scale(1.05);
+      box-shadow:0 10px 40px rgba(255,0,140,.55);
+    }
 
-/* BENEFITS */
+    section{
+      padding:90px 20px;
+    }
 
-.section{
-    padding:100px 5%;
-}
+    .section-title{
+      text-align:center;
+      font-size:48px;
+      margin-bottom:60px;
+      font-weight:800;
+    }
 
-.title{
-    text-align:center;
-    font-size:3rem;
-    margin-bottom:20px;
-    font-weight:800;
-}
+    .benefits{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+      max-width:1200px;
+      margin:auto;
+    }
 
-.subtitle{
-    text-align:center;
-    color:#bdbdbd;
-    max-width:800px;
-    margin:auto auto 70px;
-    line-height:1.8;
-}
+    .card{
+      background:#111;
+      border-radius:25px;
+      padding:35px;
+      border:1px solid rgba(255,255,255,0.08);
+      transition:.4s;
+      box-shadow:0 15px 40px rgba(0,0,0,.3);
+    }
 
-.benefits{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:30px;
-}
+    .card:hover{
+      transform:translateY(-10px);
+      border-color:#ff008c;
+    }
 
-.card{
-    background:linear-gradient(180deg,#111,#080808);
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:30px;
-    padding:35px;
-    transition:.4s;
-    position:relative;
-    overflow:hidden;
-}
+    .card h3{
+      margin-bottom:15px;
+      font-size:24px;
+    }
 
-.card::before{
-    content:'';
-    position:absolute;
-    width:150px;
-    height:150px;
-    background:radial-gradient(circle,#ff00c8 0%,transparent 70%);
-    top:-50px;
-    right:-50px;
-    opacity:.15;
-}
+    .card p{
+      color:#bbb;
+      line-height:1.7;
+    }
 
-.card:hover{
-    transform:translateY(-10px);
-    border-color:#ff7300;
-}
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+      max-width:1200px;
+      margin:auto;
+    }
 
-.card h3{
-    font-size:1.4rem;
-    margin:20px 0 15px;
-}
+    .gallery img{
+      width:100%;
+      border-radius:30px;
+      transition:.4s;
+      border:2px solid rgba(255,255,255,0.08);
+      box-shadow:0 10px 30px rgba(0,0,0,.4);
+    }
 
-.card p{
-    color:#cfcfcf;
-    line-height:1.7;
-}
+    .gallery img:hover{
+      transform:scale(1.03);
+    }
 
-.icon{
-    width:70px;
-    height:70px;
-    border-radius:20px;
-    background:linear-gradient(135deg,#ff7b00,#ff00c8);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:2rem;
-}
+    .specs{
+      max-width:1000px;
+      margin:auto;
+      background:#111;
+      padding:50px;
+      border-radius:30px;
+      border:1px solid rgba(255,255,255,0.08);
+    }
 
-/* PRODUCT */
+    .spec-item{
+      display:flex;
+      justify-content:space-between;
+      padding:18px 0;
+      border-bottom:1px solid rgba(255,255,255,0.08);
+      font-size:18px;
+    }
 
-.product{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:60px;
-    align-items:center;
-}
+    .spec-item:last-child{
+      border:none;
+    }
 
-.product-image{
-    background:#0b0b0b;
-    border-radius:40px;
-    overflow:hidden;
-    border:1px solid rgba(255,255,255,.08);
-    box-shadow:0 0 50px rgba(255,0,170,.2);
-}
+    .cta-final{
+      text-align:center;
+      background:
+      radial-gradient(circle at top,#ff008c40 0%,transparent 40%),
+      radial-gradient(circle at bottom,#ff6b0040 0%,transparent 40%),
+      #080808;
+    }
 
-.product-image img{
-    width:100%;
-    display:block;
-}
+    .cta-final h2{
+      font-size:52px;
+      margin-bottom:20px;
+      font-weight:800;
+    }
 
-.product-info h2{
-    font-size:3rem;
-    margin-bottom:25px;
-    line-height:1.2;
-}
+    .cta-final p{
+      max-width:700px;
+      margin:0 auto 40px;
+      color:#ccc;
+      font-size:20px;
+      line-height:1.7;
+    }
 
-.features{
-    margin:30px 0;
-}
+    .floating-btn{
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      z-index:999;
+      animation:pulse 2s infinite;
+    }
 
-.feature{
-    margin-bottom:18px;
-    display:flex;
-    gap:15px;
-    align-items:flex-start;
-}
-
-.feature span{
-    color:#ff7b00;
-    font-size:1.3rem;
-}
-
-/* TRUST */
-
-.trust{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:25px;
-}
-
-.trust-box{
-    background:#0d0d0d;
-    border-radius:25px;
-    padding:30px;
-    text-align:center;
-    border:1px solid rgba(255,255,255,.08);
-}
-
-.trust-box h4{
-    margin-top:15px;
-    font-size:1.2rem;
-}
-
-/* CTA */
-
-.cta{
-    text-align:center;
-    background:linear-gradient(180deg,#090909,#000);
-    border-top:1px solid rgba(255,255,255,.08);
-}
-
-.price{
-    font-size:4rem;
-    font-weight:800;
-    margin:25px 0;
-}
-
-.price span{
-    font-size:1.3rem;
-    color:#aaa;
-    text-decoration:line-through;
-}
-
-/* FLOAT BUTTON */
-
-.float-buy{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    z-index:999;
-}
-
-.float-buy a{
-    width:75px;
-    height:75px;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-decoration:none;
-    color:#fff;
-    font-size:1.6rem;
-    background:linear-gradient(135deg,#ff7b00,#ff00c8,#c0c0c0);
-    box-shadow:0 10px 40px rgba(255,0,170,.4);
-    animation:pulse 2s infinite;
-}
-
-@keyframes pulse{
-    0%{
+    @keyframes pulse{
+      0%{
         transform:scale(1);
-    }
-    50%{
-        transform:scale(1.1);
-    }
-    100%{
+      }
+      50%{
+        transform:scale(1.06);
+      }
+      100%{
         transform:scale(1);
+      }
     }
-}
 
-/* RESPONSIVO */
+    .floating-btn a{
+      text-decoration:none;
+      background:linear-gradient(135deg,#ff6b00,#ff008c,#c0c0c0);
+      color:#fff;
+      padding:18px 28px;
+      border-radius:100px;
+      font-weight:700;
+      box-shadow:0 10px 30px rgba(255,0,140,.45);
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-size:17px;
+    }
 
-@media(max-width:980px){
+    footer{
+      padding:40px 20px;
+      text-align:center;
+      color:#888;
+      background:#050505;
+      font-size:14px;
+    }
 
-.hero-content,
-.product{
-    grid-template-columns:1fr;
-}
+    @media(max-width:900px){
 
-.hero-text{
-    text-align:center;
-}
+      .hero{
+        grid-template-columns:1fr;
+        text-align:center;
+      }
 
-.hero-text h1{
-    font-size:2.8rem;
-}
+      .hero-text h1{
+        font-size:42px;
+      }
 
-.product-info h2{
-    font-size:2.2rem;
-}
+      .new-price{
+        font-size:42px;
+      }
 
-.title{
-    font-size:2.2rem;
-}
+      .section-title{
+        font-size:36px;
+      }
 
-.price{
-    font-size:3rem;
-}
+      .cta-final h2{
+        font-size:38px;
+      }
 
-}
-
-</style>
+    }
+  </style>
 </head>
-
 <body>
 
-<div class="hero">
+<header>
+  <div class="container hero">
 
-<div class="glow"></div>
+    <div>
+      <img src="67139.png" alt="Secadora 5 em 1">
+    </div>
 
-<div class="hero-content">
+    <div class="hero-text">
+      <h1>
+        Secadora <span class="gradient">5 em 1</span> Profissional
+      </h1>
 
-<div class="logo-card">
-<img src="64203.png" alt="Kaiross Segurança">
-</div>
+      <p>
+        Transforme seu cabelo em minutos com tecnologia profissional de salão.
+        Potência de 1000W, modelagem inteligente e acabamento impecável sem sair de casa.
+      </p>
 
-<div class="hero-text">
+      <div class="price-box">
+        <div class="old-price">De R$ 397,00</div>
+        <div class="new-price">Por R$ 297,00</div>
+        <div class="pix">
+          ou em até 12x no cartão
+        </div>
+      </div>
 
-<h1>
-Transforme Seu Cabelo em Minutos com a
-<span class="gradient">Secadora 5 em 1 Profissional</span>
-</h1>
+      <a href="https://pay.kaiross.com.br/wnsO3JcM5Uix" class="btn">
+        COMPRAR AGORA
+      </a>
+    </div>
 
-<p>
-Tecnologia profissional com acabamento de salão diretamente na sua casa. 
-Alisa, modela, seca e cria cachos perfeitos com potência de 1000W e sistema 220V.
-</p>
+  </div>
+</header>
 
-<a href="https://pay.kaiross.com.br/DPpjTNg6Lh9K" class="btn">
-QUERO COMPRAR AGORA
-</a>
+<section>
 
-</div>
-</div>
-</div>
+  <h2 class="section-title">
+    Porque essa secadora é <span class="gradient">diferente?</span>
+  </h2>
 
-<section class="section">
+  <div class="benefits">
 
-<h2 class="title">
-Por Que Essa Secadora Está Viralizando?
-</h2>
+    <div class="card">
+      <h3>5 em 1</h3>
+      <p>
+        Alisa, seca, modela, dá volume e cria cachos com um único aparelho profissional.
+      </p>
+    </div>
 
-<p class="subtitle">
-Mais praticidade, mais beleza e muito mais confiança para o seu dia a dia.
-Resultado profissional sem sair de casa.
-</p>
+    <div class="card">
+      <h3>Potência Profissional</h3>
+      <p>
+        Motor potente de 1000W com secagem rápida e silenciosa para resultados incríveis.
+      </p>
+    </div>
 
-<div class="benefits">
+    <div class="card">
+      <h3>Resultado de Salão</h3>
+      <p>
+        Tecnologia avançada que reduz o frizz e deixa os fios mais brilhantes.
+      </p>
+    </div>
 
-<div class="card">
-<div class="icon">⚡</div>
-<h3>1000W de Potência</h3>
-<p>
-Secagem rápida com desempenho profissional e tecnologia de alta performance.
-</p>
-</div>
+    <div class="card">
+      <h3>220 Volts</h3>
+      <p>
+        Performance elevada para uso diário com máxima eficiência e durabilidade.
+      </p>
+    </div>
 
-<div class="card">
-<div class="icon">💖</div>
-<h3>5 em 1 Completa</h3>
-<p>
-Escova secadora, modeladora, alisadora e muito mais em um único produto.
-</p>
-</div>
-
-<div class="card">
-<div class="icon">✨</div>
-<h3>Tecnologia Iônica</h3>
-<p>
-Reduz o frizz, sela as cutículas e deixa o cabelo brilhante e sedoso.
-</p>
-</div>
-
-<div class="card">
-<div class="icon">🔥</div>
-<h3>Resultado de Salão</h3>
-<p>
-Acabamento impecável e profissional sem precisar gastar com salão.
-</p>
-</div>
-
-</div>
+  </div>
 
 </section>
 
-<section class="section">
+<section>
 
-<div class="product">
+  <h2 class="section-title">
+    Design Premium <span class="gradient">Ultra Moderno</span>
+  </h2>
 
-<div class="product-image">
-<img src="66835.png" alt="Secadora 5 em 1">
-</div>
+  <div class="gallery">
 
-<div class="product-info">
+    <img src="67139.png" alt="">
+    <img src="67140.png" alt="">
+    <img src="67141.png" alt="">
 
-<h2>
-A Melhor Escova Secadora 5 em 1 da Atualidade
-</h2>
-
-<p style="color:#d1d1d1; line-height:1.9;">
-Criada para mulheres exigentes que desejam praticidade, beleza e resultados profissionais.
-Ideal para cabelos lisos, cacheados, ondulados e crespos.
-</p>
-
-<div class="features">
-
-<div class="feature">
-<span>✔</span>
-<p>Modela, seca, alisa e cacheia rapidamente</p>
-</div>
-
-<div class="feature">
-<span>✔</span>
-<p>Produto premium com acabamento sofisticado</p>
-</div>
-
-<div class="feature">
-<span>✔</span>
-<p>Leve, prática e fácil de usar</p>
-</div>
-
-<div class="feature">
-<span>✔</span>
-<p>Ideal para uso diário</p>
-</div>
-
-<div class="feature">
-<span>✔</span>
-<p>220 Volts com potência profissional</p>
-</div>
-
-</div>
-
-<a href="https://pay.kaiross.com.br/DPpjTNg6Lh9K" class="btn">
-GARANTIR MINHA SECADORA
-</a>
-
-</div>
-
-</div>
+  </div>
 
 </section>
 
-<section class="section">
+<section>
 
-<h2 class="title">
-Compra 100% Segura
-</h2>
+  <h2 class="section-title">
+    Especificações Técnicas
+  </h2>
 
-<p class="subtitle">
-Sua compra protegida do início ao fim com entrega rápida e suporte humanizado.
-</p>
+  <div class="specs">
 
-<div class="trust">
+    <div class="spec-item">
+      <span>Modelo</span>
+      <strong>Secadora 5 em 1</strong>
+    </div>
 
-<div class="trust-box">
-<h4>🔒 Compra Segura</h4>
-</div>
+    <div class="spec-item">
+      <span>Potência</span>
+      <strong>1000W</strong>
+    </div>
 
-<div class="trust-box">
-<h4>🚚 Entrega Rápida</h4>
-</div>
+    <div class="spec-item">
+      <span>Voltagem</span>
+      <strong>220V</strong>
+    </div>
 
-<div class="trust-box">
-<h4>💬 Suporte Humanizado</h4>
-</div>
+    <div class="spec-item">
+      <span>Funções</span>
+      <strong>Seca, Alisa, Modela, Volume e Cachos</strong>
+    </div>
 
-<div class="trust-box">
-<h4>⭐ Qualidade Garantida</h4>
-</div>
+    <div class="spec-item">
+      <span>Cor</span>
+      <strong>Rosa Premium com Prata</strong>
+    </div>
 
-</div>
+    <div class="spec-item">
+      <span>Uso</span>
+      <strong>Profissional e Doméstico</strong>
+    </div>
 
-</section>
-
-<section class="section cta" id="comprar">
-
-<h2 class="title">
-Garanta Agora Sua Secadora 5 em 1
-</h2>
-
-<p class="subtitle">
-Estoque limitado. Aproveite a oportunidade antes que acabe.
-</p>
-
-<div class="price">
-R$ 197,90
-<br>
-<span>de R$ 297,90</span>
-</div>
-
-<a href="https://pay.kaiross.com.br/DPpjTNg6Lh9K" class="btn">
-COMPRAR AGORA
-</a>
+  </div>
 
 </section>
 
-<div class="float-buy">
-<a href="https://pay.kaiross.com.br/DPpjTNg6Lh9K">
-🛒
-</a>
+<section class="cta-final">
+
+  <div class="container">
+
+    <h2>
+      Seu cabelo merece o melhor
+    </h2>
+
+    <p>
+      Aproveite agora a oportunidade de ter um aparelho profissional completo,
+      moderno e elegante com preço promocional por tempo limitado.
+    </p>
+
+    <a href="https://pay.kaiross.com.br/wnsO3JcM5Uix" class="btn">
+      GARANTIR MINHA SECADORA
+    </a>
+
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Kaiross Store — Todos os direitos reservados.
+</footer>
+
+<div class="floating-btn">
+  <a href="https://pay.kaiross.com.br/wnsO3JcM5Uix">
+    🛒 Comprar Agora
+  </a>
 </div>
 
 </body>
